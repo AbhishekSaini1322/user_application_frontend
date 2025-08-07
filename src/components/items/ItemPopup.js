@@ -17,7 +17,6 @@ const ItemPopup = ({ itemId, open, onClose }) => {
       return;
     }
 
-    // Only fetch if we haven't fetched this item yet
     if (hasFetched.current) return;
     
     setLoading(true);

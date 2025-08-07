@@ -27,42 +27,6 @@ const Register = () => {
     }));
   };
 
-  // async function handleRegister() {
-  //   const { name, email, password, confirmPassword } = formData;
-    
-  //   if (name?.length > 0 && email?.length > 0 && password?.length > 0 && confirmPassword?.length > 0) {
-  //     if (password !== confirmPassword) {
-  //       toastError("Passwords do not match");
-  //       return;
-  //     }
-      
-  //     setLoading(true);
-  //     try {
-  //       const body = {
-  //         name: name.trim(),
-  //         email: email.trim(),
-  //         password: password.trim(),
-  //       };
-  //       const res = await AxiosPost(ApiPaths.register, body);
-  //       console.log("register", res);
-  //       if (res.status == 200) {
-  //         toastSuccess(res?.message || "Registration successful!");
-  //         navigate("/login");
-  //         setLoading(false);
-  //       } else {
-  //         toastError(res?.message || "Registration failed");
-  //         setLoading(false);
-  //       }
-  //       setLoading(false);
-  //     } catch (error) {
-  //       toastError(error?.message || "Registration failed");
-  //       setLoading(false);
-  //     }
-  //   } else {
-  //     toastError("Please fill all fields");
-  //   }
-  // }
-
   async function handleRegister() {
     const { name, email, password, confirmPassword } = formData;
   
